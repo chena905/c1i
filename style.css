@@ -1,1 +1,13 @@
 body{background-color: rgb(252, 217, 190);}
+
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+h1{
+    line-height: 15px;
+    font-size: 200px; 
+    color:rgb(57, 57, 255); 
+    font-family:'Caveat'
+}
