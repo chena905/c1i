@@ -1,8 +1,8 @@
-body{background-color: rgb(252, 217, 190);}
+body{background-color: rgb(252, 217, 190);
 
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 100;
   font-style: normal;
 }
 h1{
