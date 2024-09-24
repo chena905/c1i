@@ -1,4 +1,4 @@
-body{background-color: rgb(252, 217, 190);
+body{background-color: #f8dbdb;
 
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
@@ -8,6 +8,6 @@ body{background-color: rgb(252, 217, 190);
 h1{
     line-height: 15px;
     font-size: 200px; 
-    color:rgb(57, 57, 255); 
+    color:#f35695; 
     font-family:'Caveat'
 }
