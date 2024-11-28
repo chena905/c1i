@@ -23,79 +23,8 @@ h1{
   height: 100%;
 }
 .image-container {
-  width: 100px;
-  height: 100px;
-}
-
-.hover-image {
-  width: 50%;
-  height: 50%;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.image-container:hover .hover-image {
-  content: url('./images/bunny2.png'); 
-}
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-}
-
-
-element.style {
-}
-.m1 {
-    font-size: 50px;
-    color: #f35695;
-    font-family: 'Caveat';
-    direction: left;
-}
-.m1 {
-    background-color: rgb(255, 255, 255);
-}
-/* General Styles */
-body {
-  margin: 0;
-  padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f4f4f9;
-  font-family: Arial, sans-serif;
-}
-
-.zigzag-container {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.zigzag {
-  display: block;
-  width: 100%;
-  max-width: 80%;
-  margin: 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.zigzag:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-/* Zigzag Alignment */
-.left {
-  margin-left: 0;
-  margin-right: auto;
-}
-
-.right {
-  margin-right: 0;
-  margin-left: auto;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Full viewport height */
 }
