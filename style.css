@@ -20,11 +20,10 @@ h1{
 }
 .header-image{
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .image-container {
-  display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  height: 100vh; /* Full viewport height */
+  width: 100%;
+  height: auto;
+  max-width: 300px;
 }
