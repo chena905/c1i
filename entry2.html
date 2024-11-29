@@ -11,12 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
     <style>
+        /* Magic wand cursor */
         body {
+            cursor: url(https://www.nicepng.com/png/full/280-2801510_view-cursor-on-t-shirt-cursor.png), auto;
             background-image: url(https://i0.wp.com/guitarandlace.com/wp-content/uploads/2024/04/pink-gingham-wallpaper-scaled.jpeg?ssl=1);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            overflow-x: hidden; 
+            overflow-x: hidden;
             position: relative;
         }
         .tilt-effect {
@@ -35,6 +37,8 @@
             background-color: rgba(255, 255, 255, 0.7);
             padding: 10px;
             border-radius: 10px;
+            opacity: 0; /* Start with opacity 0 */
+            transition: opacity 1s; /* Fade in effect */
         }
         marquee {
             font-size: 30px;
@@ -45,8 +49,7 @@
             text-align: center;
             margin-bottom: 10px;
         }
-
-
+        /* Snowflake animation */
         .snowflake {
             position: fixed;
             width: 10px;
@@ -73,12 +76,14 @@
 <body>
     <img src="./images/header.png" alt="header" class="header-image" style="width: 100%; height: auto;" />
     <br>
+    <br>
+    <br>
 
     <div style="text-align: center; margin-bottom: 100px;">
         <a href="entry3.html" class="tilt-effect">
             <img src="./images/bunny1.png" alt="Image 1" style="width: 500px; height: auto;">
         </a>
-        <div class="text-content">
+        <div class="text-content" id="text1">
             Collecting collectibles is like being a treasure hunter, except the treasure is usually just a plastic figure with a questionable smell and collects dust on your shelves. Whether it's a rare toy, or a funky looking doll, every item is a trophy in the battle of "How much did I spend on this?"
         </div>
     </div>
@@ -87,7 +92,7 @@
         <a href="entry4.html" class="tilt-effect">
             <img src="./images/labubu1.png" alt="Image 2" style="width: 500px; height: auto;">
         </a>
-        <div class="text-content">
+        <div class="text-content" id="text2">
             The real joy? The thrill of telling people you’ve got a collection that’s worth something, even if it’s just worth a nickel or two. Plus, nothing bonds people quite like discovering that you both have the same obsession with tiny, overpriced pieces of plastic.
         </div>
     </div>
@@ -96,7 +101,7 @@
         <a href="entry5.html" class="tilt-effect">
             <img src="./images/sonnyangel1.png" alt="Image 3" style="width: 500px; height: auto;">
         </a>
-        <div class="text-content">
+        <div class="text-content" id="text3">
             Collecting: for when you need an excuse to be surrounded by things you don’t really need but can’t resist.
         </div>
     </div>
@@ -105,16 +110,15 @@
         <a href="entry6.html" class="tilt-effect">
             <img src="./images/jellycat1.png" alt="Image 4" style="width: 500px; height: auto;">
         </a>
-        <div class="text-content">
+        <div class="text-content" id="text4">
             It’s a hobby where “limited edition” is the magic spell that makes your wallet spontaneously combust. You start with one innocent piece—maybe a coin or a trading card—and suddenly, you’re calculating how much kidney money you’d need to buy that ultra-rare, mint-condition action figure still in its box.
         </div>
     </div>
-    <img src="./images/footer.png" alt="header" class="header-image" style="width: 100%; height: auto;" />
-    <br>
-    
+    <img src="./images/footer.png" alt="footer" class="footer-image" style="width: 100%; height: auto;" />
+    <!-- JavaScript for dynamically creating snowflakes -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const numOfSnowflakes = 50; 
+            const numOfSnowflakes = 50; // Adjust number of snowflakes as needed
             for (let i = 0; i < numOfSnowflakes; i++) {
                 const snowflake = document.createElement('div');
                 snowflake.classList.add('snowflake');
@@ -123,6 +127,18 @@
                 snowflake.style.animationDelay = `${Math.random() * 2}s`;
                 document.body.appendChild(snowflake);
             }
+
+            // Add fade-in effect on scroll
+            const elements = document.querySelectorAll('.text-content');
+            window.addEventListener('scroll', () => {
+                const scrollPosition = window.scrollY + window.innerHeight;
+                elements.forEach(element => {
+                    const elementPosition = element.offsetTop + element.offsetHeight / 2;
+                    if (scrollPosition > elementPosition) {
+                        element.style.opacity = 1; // Fade in the element
+                    }
+                });
+            });
         });
     </script>
 </body>
