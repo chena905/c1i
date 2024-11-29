@@ -23,7 +23,31 @@ h1{
   height: auto;
 }
 .image-container {
-  width: 100%;
-  height: auto;
-  max-width: 300px;
+  margin-bottom: 20px; /* Space between images */
+}
+
+/* Odd images - align left */
+.image-container:nth-child(odd) {
+  text-align: left;
+  margin-left: 10%; /* Slightly center the left-aligned images */
+}
+
+/* Even images - align right */
+.image-container:nth-child(even) {
+  text-align: right;
+  margin-right: 10%; /* Slightly center the right-aligned images */
+}
+
+.image-container img {
+  width: 500px; /* Set the size of all images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.text-content {
+  font-size: 30px; /* Adjust for readability */
+  color: #f35695;
+}
+html, body {
+  overflow-y: auto; /* Ensures vertical scrolling */
+  height: 100%; /* Ensures the body takes the full height */
 }

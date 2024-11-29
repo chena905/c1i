@@ -5,15 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calico critters collection</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="entry3.css" />
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            perspective: 1000px; /* Adds depth for the 3D effect */
+        }
+
+        .bunny1 {
+            width: 600px; /* Set the desired size */
+            height: auto;
+            transition: transform 0.5s ease; /* Smooth transition */
+        }
+
+        .bunny1:hover {
+            transform: rotate(10deg) scale(1.05); /* Tilt and zoom effect */
+        }
+    </style>
 </head>
 <body>
-    <img src="images/calicocritterheader.png" alt="calicoheader" class="calicoheader-image"/>
-    <img src="./images/bunny1.png" alt="Image 1" class="bunny1" style="width: 400px; height: auto; justify-content: center;">
+    <img src="images/calicocritterheader.png" alt="calicoheader" style="width: 100%; height: auto;">
+
+    <!-- Centered image container with tilt effect -->
+    <div class="container">
+        <img src="./images/bunny1.png" alt="Image 1" class="bunny1">
+    </div>
 </body>
 </html>

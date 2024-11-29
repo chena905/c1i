@@ -5,40 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(https://i0.wp.com/guitarandlace.com/wp-content/uploads/2024/04/pink-gingham-wallpaper-scaled.jpeg?ssl=1);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow-x: hidden; 
+            position: relative;
+        }
+        .tilt-effect {
+            display: inline-block;
+            transition: transform 0.3s ease-in-out;
+        }
+        .tilt-effect:hover {
+            transform: rotate(5deg);
+        }
+        .text-content {
+            font-size: 20px;
+            text-align: center;
+            max-width: 500px;
+            margin: 20px auto 100px auto;
+            color: #f35695;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        marquee {
+            font-size: 30px;
+            color: #ffffff;
+            background-color: #f35695;
+            padding: 30px;
+            display: block;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Snowflake animation */
+        .snowflake {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            opacity: 0.9;
+            animation: fall linear infinite;
+            z-index: 9999;
+        }
+
+        @keyframes fall {
+            0% {
+                top: -10px;
+                transform: translateX(0);
+            }
+            100% {
+                top: 100vh;
+                transform: translateX(0);
+            }
+        }
+    </style>
 </head>
 <body>
-    <a href="https://github.com/chena905/c1i">Back to home page</a>
-    <img src="./images/header2.png" alt="header" class="header-image"/>
+    <img src="./images/header2.png" alt="header" class="header-image" style="width: 100%; height: auto;" />
+    <br>
     <br>
     <br>
     <div>
-        <marquee class="m1">stop blind box gambling</marquee>
+        <marquee class="m1">calico critter</marquee>
     </div>
+
+    <div style="text-align: center; margin-bottom: 100px;">
+        <a href="entry3.html" class="tilt-effect">
+            <img src="./images/bunny1.png" alt="Image 1" style="width: 500px; height: auto;">
+        </a>
+        <div class="text-content">
+            Collecting collectibles is like being a treasure hunter, except the treasure is usually just a plastic figure with a questionable smell and collects dust on your shelves. Whether it's a rare toy, or a funky looking doll, every item is a trophy in the battle of "How much did I spend on this?"
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 100px;">
+        <a href="entry4.html" class="tilt-effect">
+            <img src="./images/labubu1.png" alt="Image 2" style="width: 500px; height: auto;">
+        </a>
+        <div class="text-content">
+            The real joy? The thrill of telling people you’ve got a collection that’s worth something, even if it’s just worth a nickel or two. Plus, nothing bonds people quite like discovering that you both have the same obsession with tiny, overpriced pieces of plastic.
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 100px;">
+        <a href="entry5.html" class="tilt-effect">
+            <img src="./images/sonnyangel1.png" alt="Image 3" style="width: 500px; height: auto;">
+        </a>
+        <div class="text-content">
+            Collecting: for when you need an excuse to be surrounded by things you don’t really need but can’t resist.
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 100px;">
+        <a href="entry6.html" class="tilt-effect">
+            <img src="./images/jellycat1.png" alt="Image 4" style="width: 500px; height: auto;">
+        </a>
+        <div class="text-content">
+            It’s a hobby where “limited edition” is the magic spell that makes your wallet spontaneously combust. You start with one innocent piece—maybe a coin or a trading card—and suddenly, you’re calculating how much kidney money you’d need to buy that ultra-rare, mint-condition action figure still in its box.
+        </div>
+    </div>
+
     
-    <div class="image-container">
-        <a href="entry3.html">
-            <img src="./images/bunny1.png" alt="Image 1" class="image-container" style="width: 600px; height: auto;">
-        </a>
-    </div>
-    <br>
-    <br>
-    <div class="image-container">
-        <a href="entry4.html">
-            <img src="./images/labubu1.png" alt="Image 2" style="width: 300px; height: auto;">
-        </a>
-    </div>
-    <br>
-    <br>
-    <div class="image-container"></div>
-        <a href="entry5.html">
-            <img src="./images/sonnyangel1.png" alt="Image 3" style="width: 300px; height: auto;">
-        </a>
-    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const numOfSnowflakes = 50; 
+            for (let i = 0; i < numOfSnowflakes; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.classList.add('snowflake');
+                snowflake.style.left = `${Math.random() * window.innerWidth}px`;
+                snowflake.style.animationDuration = `${3 + Math.random() * 4}s`;
+                snowflake.style.animationDelay = `${Math.random() * 2}s`;
+                document.body.appendChild(snowflake);
+            }
+        });
+    </script>
 </body>
 </html>

@@ -10,3 +10,17 @@
   align-items: center; /* Center vertically */
   
 }
+body{
+  background-color: #f8dbdb;
+
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+
+  .metal-regular {
+    font-family: "Metal", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
