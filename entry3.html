@@ -12,6 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="entry3.css" />
     <style>
+        body {
+            cursor: url(https://www.nicepng.com/png/full/280-2801510_view-cursor-on-t-shirt-cursor.png), auto;
+            background-image: url(https://i0.wp.com/guitarandlace.com/wp-content/uploads/2024/04/pink-gingham-wallpaper-scaled.jpeg?ssl=1);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow-x: hidden;
+            position: relative;
+        }
         .container {
             display: flex;
             justify-content: center;
@@ -29,14 +38,51 @@
         .bunny1:hover {
             transform: rotate(10deg) scale(1.05); /* Tilt and zoom effect */
         }
+
+        .image-text-container {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center the items */
+            gap: 10px; /* Space between image and text */
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        .image-text-container img {
+            max-width: 30%; /* Adjust width as needed */
+            height: auto; /* Keeps the aspect ratio */
+        }
+
+        .textbox {
+            color: #f35695; /* Text color */
+            background-color: #f8dbdb; /* Background color */
+            border-radius: 8px;
+            text-align: center; /* Center the text */
+            font-family: "Caveat", cursive;
+            font-weight: 400;
+            padding: 10px;
+            font-size: 20px; /* Adjust font size */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
+        }
     </style>
 </head>
 <body>
     <img src="images/calicocritterheader.png" alt="calicoheader" style="width: 100%; height: auto;">
-
-    <!-- Centered image container with tilt effect -->
+  
     <div class="container">
         <img src="./images/bunny1.png" alt="Image 1" class="bunny1">
+    </div>
+    <div class="text-boxes">
+        <div class="short-box">Obsession Origin</div>
+        <div class="tall-box">It all started when I was five, wandering through the magical maze of Toys”R” Us. Luckily, I was there with my grandpa who always makes sure I get what I want. This started my collection journey with Calico Critters and I would name each little furry friend I got after my family and friends. The obsession never stopped and every time I walked past FAO Schwarz I would go in and get myself a Calico Critter blind box.</div>
+    </div>
+  
+    <!-- Flexbox container for the image and text stacked vertically -->
+    <div class="image-text-container">
+        <img src="./images/grandpa.png" alt="grandpaimg">
+        <div class="textbox">
+            Sponsor: Grandpa
+        </div>
     </div>
 </body>
 </html>

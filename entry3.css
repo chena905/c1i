@@ -1,26 +1,114 @@
-.calicoheader-image
-{
-    width: 100%;
-    height: 100%;
-  }
-.bunny1
-{
+.calicoheader-image {
+  width: 100%;
+  height: auto; /* Adjusted to keep aspect ratio */
+}
+
+.bunny1 {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  
 }
-body{
-  background-color: #f8dbdb;
 
+body {
+  background-color: #f8dbdb;
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
+}
 
-  .metal-regular {
-    font-family: "Metal", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.metal-regular {
+  font-family: "Metal", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.short-box {
+  width: 50%; /* Adjust width as necessary */
+  color: #f8dbdb;
+  background-color: #f35695;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Metal", serif;
+  font-weight: 700; /* Bold weight */
+  margin-bottom: 10px;
+  padding: 10px;
+  height: 50px; /* Shorter height */
+  font-size: 40px; /* Larger font for the short box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tall-box {
+  width: 50%; /* Adjust width as necessary */
+  color: #f35695; /* Text color changed to pink */
+  background-color: #f8dbdb; /* Background color changed to light pink */
+  border-radius: 8px;
+  text-align: left; /* Align text to the left */
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding: 10px;
+  height: 200px; /* Taller height */
+  font-size: 24px; /* Increased font size for the tall box */
+  box-shadow: 2px 2px 5px rgba(111, 0, 83, 0.926);
+}
+
+h1 {
+  line-height: 15px;
+  font-size: 200px;
+  color: #f8dbdb;
+  font-family: "Metal", serif;
+}
+
+/* Flexbox container for image and text, adjusted for vertical alignment */
+.image-text-container {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center the items */
+  gap: 10px; /* Space between the image and text */
+  margin-top: 20px; /* Adjust if needed */
+}
+
+.image-after img {
+  width: 30%; /* Adjust width as needed */
+  height: auto;
+  display: block;
+}
+
+.textbox {
+  color: #f8dbdb;
+  background-color: #f35695;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Metal", serif;
+  font-weight: 400;
+  padding: 10px;
+  font-size: 40px; /* Adjust font size as needed */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
+  width: 30%; /* Adjust width as needed */
+  height: 50px; /* Match the height of the .short-box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add the spinning effect */
+.image-text-container img {
+  width: 30%; /* Adjust width as needed */
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease; /* Smooth rotation */
+}
+
+.image-text-container img:hover {
+  transform: rotate(360deg); /* Spins the image 360 degrees */
 }
