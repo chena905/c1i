@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonny Angel Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="entry4.css" />
+    <style>
+        body {
+            cursor: url(https://www.nicepng.com/png/full/280-2801510_view-cursor-on-t-shirt-cursor.png), auto;
+            background-image: url(https://i.pinimg.com/736x/dc/fa/ab/dcfaabb0314da3e84c26194c0cca3820.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            perspective: 1000px; /* Adds depth for the 3D effect */
+        }
+
+        .sonnyangel1 {
+            width: 600px; /* Set the desired size */
+            height: auto;
+            transition: transform 0.5s ease; /* Smooth transition */
+        }
+
+        .sonnyangel1:hover {
+            transform: rotate(10deg) scale(1.05); /* Tilt and zoom effect */
+        }
+
+        .image-text-container {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center the items */
+            gap: 10px; /* Space between image and text */
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        .image-text-container img {
+            max-width: 50%; /* Adjust width as needed */
+            height: auto; /* Keeps the aspect ratio */
+        }
+
+        .textbox {
+            color: #5B3E2E; /* Text color */
+            background-color: #C0E3AD; /* Background color */
+            border-radius: 8px;
+            text-align: center; /* Center the text */
+            font-family: "Metal", serif;
+            font-weight: 400;
+            padding: 10px;
+            font-size: 40px; /* Adjust font size */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
+        }
+    </style>
+</head>
+<body>
+    <img src="images/sonnyangelheader.png" alt="sonnyangelheader" style="width: 100%; height: auto;">
+  <br>
+  <br>
+  <br>
+    <div class="container">
+        <img src="./images/sonnyangel1.png" alt="Image 1" class="sonnyangel1">
+    </div>
+    <div class="text-boxes">
+        <div class="short-box">Obsession Origin</div>
+        <div class="tall-box">It all started when I was five, wandering through the magical maze of Toys”R” Us. Luckily, I was there with my grandpa who always makes sure I get what I want. This started my collection journey with Calico Critters and I would name each little furry friend I got after my family and friends. The obsession never stopped and every time I walked past FAO Schwarz I would go in and get myself a Calico Critter blind box.</div>
+    </div>
+  
+    <!-- Flexbox container for the image and text stacked vertically -->
+    <div class="image-text-container">
+        <img src="./images/elisu1.png" alt="grandpaimg">
+        <div class="textbox">
+            Sponsor: Elizabeth Su
+        </div>
+    </div>
+</body>
+</html>
