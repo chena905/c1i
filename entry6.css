@@ -1,0 +1,112 @@
+.calicoheader-image {
+    width: 100%;
+    height: auto; /* Keeps aspect ratio */
+  }
+  
+  .sonnyangel1 {
+    width: 30%; /* Adjust size of the bunny image */
+    margin: auto; /* Centers the image horizontally */
+    display: block; /* Ensures proper block behavior */
+  }
+  
+  body {
+    background-color: #f8dbdb;
+    font-family: "Caveat", cursive;
+    font-weight: 100;
+  }
+  
+  .metal-regular {
+    font-family: "Metal", serif;
+    font-weight: 400;
+  }
+  
+  .text-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .short-box {
+    width: 50%; /* Adjust width */
+    color: #5B3E2E; /* Text color */
+    background-color: #C0E3AD; /* Corrected background color */
+    border-radius: 8px;
+    text-align: center;
+    font-family: "Metal", serif;
+    font-weight: 700; /* Bold weight */
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 50px; /* Height for consistency */
+    font-size: 40px; /* Font size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tall-box {
+    width: 50%; /* Adjust width */
+    color: #5B3E2E; /* Adjusted text color */
+    background-color: #F9EED8; /* Soft pink background */
+    border-radius: 8px;
+    text-align: left;
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding: 20px;
+    height: auto; /* Allow content height to adjust */
+    font-size: 24px;
+    box-shadow: 2px 2px 5px rgba(111, 0, 83, 0.4); /* Soft shadow */
+  }
+  
+  h1 {
+    line-height: 1;
+    font-size: 200px;
+    color: #5B3E2E; /* Adjusted color for visibility */
+    font-family: "Metal", serif;
+  }
+  
+  /* Flexbox container for image and text */
+  .image-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between elements */
+    margin-top: 20px;
+  }
+  
+  .image-after img {
+    width: 30%;
+    height: auto;
+    display: block;
+  }
+  
+  .textbox {
+    color: #5B3E2E; /* Text color */
+    background-color: #C0E3AD; /* Matching short-box color */
+    border-radius: 8px;
+    text-align: center;
+    font-family: "Metal", serif;
+    font-weight: 400;
+    padding: 10px;
+    font-size: 40px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    width: 30%; /* Adjust width */
+    height: 50px; /* Consistent height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Add the spinning effect */
+  .image-text-container img {
+    width: 30%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease; /* Smooth rotation */
+  }
+  
+  .image-text-container img:hover {
+    transform: rotate(360deg); /* Spins the image 360 degrees */
+  }
+  

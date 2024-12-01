@@ -1,116 +1,111 @@
 .calicoheader-image {
-    width: 100%;
-    height: auto; /* Adjusted to keep aspect ratio */
-  }
-  
-  .labubu1 {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    width: 30%;
-  }
-  
-  body {
-    background-color: #f8dbdb;
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .metal-regular {
-    font-family: "Metal", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .text-boxes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .short-box {
-    width: 50%; /* Adjust width as necessary */
-    color: #5B3E2E;
-    background-color: #C0E3AD;
-    border-radius: 8px;
-    text-align: center;
-    font-family: "Metal", serif;
-    font-weight: 700; /* Bold weight */
-    margin-bottom: 10px;
-    padding: 10px;
-    height: 50px; /* Shorter height */
-    font-size: 40px; /* Larger font for the short box */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .tall-box {
-    width: 50%; /* Adjust width as necessary */
-    color: #5B3E2E; /* Text color */
-    ; /* Text color changed to pink */
-    background-color: #F9EED8; /* Background color changed to light pink */
-    border-radius: 8px;
-    text-align: left; /* Align text to the left */
-    font-family: "Caveat", cursive;
-    font-weight: 400;
-    margin-bottom: 10px;
-    padding: 10px;
-    height: 200px; /* Taller height */
-    font-size: 24px; /* Increased font size for the tall box */
-  }
-  
-  h1 {
-    line-height: 15px;
-    font-size: 200px;
-    color: #f8dbdb;
-    font-family: "Metal", serif;
-  }
-  
-  /* Flexbox container for image and text, adjusted for vertical alignment */
-  .image-text-container {
-    display: flex;
-    flex-direction: column; /* Stack image and text vertically */
-    align-items: center; /* Center the items */
-    gap: 10px; /* Space between the image and text */
-    margin-top: 20px; /* Adjust if needed */
-  }
-  
-  .image-after img {
-    width: 30%; /* Adjust width as needed */
-    height: auto;
-    display: block;
-  }
-  
-  .textbox {
-    color: #5B3E2E;
-    background-color: #C0E3AD;
-    border-radius: 8px;
-    text-align: center;
-    font-family: "Metal", serif;
-    font-weight: 400;
-    padding: 10px;
-    font-size: 40px; /* Adjust font size as needed */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
-    width: 30%; /* Adjust width as needed */
-    height: 50px; /* Match the height of the .short-box */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Add the spinning effect */
-  .image-text-container img {
-    width: 30%; /* Adjust width as needed */
-    height: auto;
-    display: block;
-    transition: transform 0.5s ease; /* Smooth rotation */
-  }
-  
-  .image-text-container img:hover {
-    transform: rotate(360deg); /* Spins the image 360 degrees */
-  }
-  
+  width: 100%;
+  height: auto; /* Keeps aspect ratio */
+}
+
+.sonnyangel1 {
+  width: 30%; /* Adjust size of the bunny image */
+  margin: auto; /* Centers the image horizontally */
+  display: block; /* Ensures proper block behavior */
+}
+
+body {
+  background-color: #f8dbdb;
+  font-family: "Caveat", cursive;
+  font-weight: 100;
+}
+
+.metal-regular {
+  font-family: "Metal", serif;
+  font-weight: 400;
+}
+
+.text-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.short-box {
+  width: 50%; /* Adjust width */
+  color: #BC3B6F; /* Text color */
+  background-color: #C0E3AD; /* Corrected background color */
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Metal", serif;
+  font-weight: 700; /* Bold weight */
+  margin-bottom: 10px;
+  padding: 10px;
+  height: 50px; /* Height for consistency */
+  font-size: 40px; /* Font size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tall-box {
+  width: 50%; /* Adjust width */
+  color: #BC3B6F; /* Adjusted text color */
+  background-color: #F9EED8; /* Soft pink background */
+  border-radius: 8px;
+  text-align: left;
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding: 20px;
+  height: auto; /* Allow content height to adjust */
+  font-size: 24px;
+  box-shadow: 2px 2px 5px rgba(111, 0, 83, 0.4); /* Soft shadow */
+}
+
+h1 {
+  line-height: 1;
+  font-size: 200px;
+  color: #BC3B6F; /* Adjusted color for visibility */
+  font-family: "Metal", serif;
+}
+
+/* Flexbox container for image and text */
+.image-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Space between elements */
+  margin-top: 20px;
+}
+
+.image-after img {
+  width: 30%;
+  height: auto;
+  display: block;
+}
+
+.textbox {
+  color: #BC3B6F; /* Text color */
+  background-color: #C0E3AD; /* Matching short-box color */
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Metal", serif;
+  font-weight: 400;
+  padding: 10px;
+  font-size: 40px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  width: 50%; /* Adjust width */
+  height: 30px; /* Consistent height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add the spinning effect */
+.image-text-container img {
+  width: 30%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease; /* Smooth rotation */
+}
+
+.image-text-container img:hover {
+  transform: rotate(360deg); /* Spins the image 360 degrees */
+}

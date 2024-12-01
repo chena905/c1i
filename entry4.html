@@ -13,14 +13,28 @@
     <link rel="stylesheet" href="entry4.css" />
     <style>
         body {
-            cursor: url(https://www.nicepng.com/png/full/280-2801510_view-cursor-on-t-shirt-cursor.png), auto;
+            font-family: "Caveat", cursive;
+            margin: 0; /* Remove default margin */
+            overflow-x: hidden;
+            position: relative;
+            z-index: 1; /* Ensure content stays above background */
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background-image: url(https://m.media-amazon.com/images/I/9137mjhtmPL._AC_SL1500_.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            overflow-x: hidden;
-            position: relative;
+            opacity: 0.5; /* Adjust opacity here */
+            z-index: -1; /* Keep it behind other content */
+            pointer-events: none; /* Allow interactions with other elements */
         }
+
         .container {
             display: flex;
             justify-content: center;
@@ -67,10 +81,14 @@
     </style>
 </head>
 <body>
+    <!-- Background Image Container -->
+    <div class="background"></div>
+
+    <!-- Header Image -->
     <img src="images/labubuheader.png" alt="labubuheader" style="width: 100%; height: auto;">
-  <br>
-  <br>
-  <br>
+    <br>
+    <br>
+    <br>
     <div class="container">
         <img src="./images/labubu1.png" alt="Image 1" class="labubu1">
     </div>
@@ -78,7 +96,7 @@
         <div class="short-box">Obsession Origin</div>
         <div class="tall-box">It all started when I was five, wandering through the magical maze of Toys”R” Us. Luckily, I was there with my grandpa who always makes sure I get what I want. This started my collection journey with Calico Critters and I would name each little furry friend I got after my family and friends. The obsession never stopped and every time I walked past FAO Schwarz I would go in and get myself a Calico Critter blind box.</div>
     </div>
-  
+
     <!-- Flexbox container for the image and text stacked vertically -->
     <div class="image-text-container">
         <img src="./images/ryan1.png" alt="grandpaimg">
