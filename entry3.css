@@ -112,3 +112,30 @@ h1 {
 .image-text-container img:hover {
   transform: rotate(360deg); /* Spins the image 360 degrees */
 }
+.product-gallery {
+  display: flex;
+  max-width: 800px;
+  gap: 10px;
+}
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main-image {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+.thumbnail:hover, .thumbnail.active {
+  border-color: #007bff;
+}
