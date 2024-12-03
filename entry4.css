@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    width: 30%;
+    width: 40%;
   }
   
   body {
@@ -59,7 +59,7 @@
     font-weight: 400;
     margin-bottom: 10px;
     padding: 10px;
-    height: 200px; /* Taller height */
+    height: 250px; /* Taller height */
     font-size: 24px; /* Increased font size for the tall box */
   }
   
