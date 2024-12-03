@@ -78,6 +78,25 @@
             font-size: 40px; /* Adjust font size */
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
         }
+        .home-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        .home-button img {
+            width: 100%; /* Make the image fill the button */
+            height: auto;
+            border-radius: 50%; /* Make the image circular */
+        }
     </style>
 </head>
 <body>
@@ -103,10 +122,15 @@
         </div>
     </div>
     <div style="text-align: center; margin: 50px 0 20px;">
-        <a href="entry7.html">
+        <a href="entry7.html" target="_blank">
         <img src="images/basket1.png" alt="Small Image" style="max-width: 150px; height: auto; border-radius: 8px; display: block; margin: 0 auto;">
     </a>
     </div>
+     <!-- Home button with an image -->
+     <div class="home-button" onclick="window.location.href='entry2.html'">
+        <img src="images/house2.png" alt="Home">
+    </div>
+
 
     
 </body>

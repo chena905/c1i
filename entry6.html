@@ -124,6 +124,25 @@
             justify-content: center;
             align-items: center;
         }
+        .home-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        .home-button img {
+            width: 100%; /* Make the image fill the button */
+            height: auto;
+            border-radius: 50%; /* Make the image circular */
+        }
     </style>
 </head>
 <body>
@@ -151,5 +170,10 @@
         <img src="./images/arielchen1.png" alt="Grandpa Image">
         <div class="textbox">Sponsor: Ariel Chen </div>
     </div>
+     <!-- Home button with an image -->
+     <div class="home-button" onclick="window.location.href='entry2.html'">
+        <img src="images/house2.png" alt="Home">
+    </div>
+
 </body>
 </html>

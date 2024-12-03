@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calico Critter Inventory</title>
+    <title>Labubu Inventory</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
@@ -12,24 +12,25 @@
         body {
             font-family: 'Caveat', cursive;
             margin: 0;
-            background-image: url('https://i.pinimg.com/736x/e4/83/3f/e4833f52b1cf676852363793ca76813b.jpg'); /* Background image */
+            background-image: url('https://m.media-amazon.com/images/I/9137mjhtmPL._AC_SL1500_.jpg'); /* Background image */
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
             color: #333; /* Optional: adjust text color for better readability */
+            position: relative;
         }
         .inventory-title {
             font-family: "Metal", serif; /* Apply the font family */
             text-align: center;
-            background-color: #f35695; 
+            background-color: #9AE1DD; 
             padding: 15px; /* Add padding to create space around the text */
             border-radius: 8px;
             margin: 20px auto;
             width: 25%; /* Adjusted width for better fitting */
             font-size: 40px;
             font-weight: 700;
-            color: #f8dbdb; /* Text color */
+            color: #5B3E2E; /* Text color */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .product-gallery {
@@ -47,7 +48,7 @@
             width: 500px; 
             height: 500px; 
             object-fit: cover; 
-            border: 3px solid #f35695; 
+            border: 3px solid #9AE1DD; 
             border-radius: 10px; 
             margin-bottom: 15px;
         }
@@ -67,7 +68,7 @@
             transition: all 0.3s ease;
         }
         .thumbnail:hover, .thumbnail.active {
-            border-color: #f35695;
+            border-color: #9AE1DD;
             transform: scale(1.1);
         }
         .home-button {
@@ -92,32 +93,31 @@
     </style>
 </head>
 <body>
-    <img src="images/calicocritterheader.png" alt="calicoheader" style="width: 100%; height: auto;">
-    <div class="inventory-title" >Inventory</div>
+    <img src="images/labubuheader.png" alt="calicoheader" style="width: 100%; height: auto;">
+    <div class="inventory-title">Inventory</div>
     <div class="product-gallery">
-        <img id="mainImage" class="main-image" src="images/traced-IMG_9666.png" alt="Main Product Image">
+        <img id="mainImage" class="main-image" src="images/lbb1.jpg" alt="Main Product Image">
         <div class="thumbnail-container">
-            <img src="images/cc1.jpg" class="thumbnail active" onclick="changeImage(this)">
-            <img src="images/cc2.webp" class="thumbnail" onclick="changeImage(this)">
-            <img src="images/cc3.webp" class="thumbnail" onclick="changeImage(this)">
-            <img src="images/cc4.avif" class="thumbnail" onclick="changeImage(this)">
-            <img src="images/cc5.webp" class="thumbnail" onclick="changeImage(this)">
-            <img src="images/cc6.webp" class="thumbnail" onclick="changeImage(this)">
+            <img src="images/lbb2.webp" class="thumbnail active" onclick="changeImage(this)">
+            <img src="images/lbb3.webp" class="thumbnail" onclick="changeImage(this)">
+            <img src="images/lbb4.webp" class="thumbnail" onclick="changeImage(this)">
+            <img src="images/lbb5.webp" class="thumbnail" onclick="changeImage(this)">
+            <img src="images/lbb6.webp" class="thumbnail" onclick="changeImage(this)">
+            <img src="images/lbb7.webp" class="thumbnail" onclick="changeImage(this)">
             <!-- Additional thumbnails will go to the next row -->
-            <img src="images/cc7.webp" class="thumbnail" onclick="changeImage(this)">
-            <img src="images/cc8.webp" class="thumbnail" onclick="changeImage(this)">
-            <img src="images/cc9.webp" class="thumbnail" onclick="changeImage(this)">
-            <img src="images/cc10.avif" class="thumbnail" onclick="changeImage(this)">
-            <img src="images/cc11.webp" class="thumbnail" onclick="changeImage(this)">
-            <img src="images/cc12.jpg" class="thumbnail" onclick="changeImage(this)">
-            <img src="images/cc13.jpg" class="thumbnail" onclick="changeImage(this)">
-            <img src="images/cc14.webp" class="thumbnail" onclick="changeImage(this)">
+            <img src="images/lbb8.webp" class="thumbnail" onclick="changeImage(this)">
+            <img src="images/lbb9.webp" class="thumbnail" onclick="changeImage(this)">
+            <img src="images/lbb10.webp" class="thumbnail" onclick="changeImage(this)">
+            <img src="images/lbb11.webp" class="thumbnail" onclick="changeImage(this)">
+            <img src="images/lbb12.webp" class="thumbnail" onclick="changeImage(this)">
+            <img src="images/lbb13.webp" class="thumbnail" onclick="changeImage(this)">
         </div>
     </div>
- <!-- Home button with an image -->
- <div class="home-button" onclick="window.location.href='entry2.html'">
-    <img src="images/house2.png" alt="Home">
-</div>
+
+    <!-- Home button with an image -->
+    <div class="home-button" onclick="window.location.href='entry2.html'">
+        <img src="images/house2.png" alt="Home">
+    </div>
 
     <script>
         function changeImage(thumbnailElement) {
